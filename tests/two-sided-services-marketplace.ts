@@ -167,7 +167,7 @@ describe("two-sided-services-marketplace", () => {
 
   it("Withdraw service", async () => {
 
-   const vendorTokenAccount =  getAssociatedTokenAddressSync(
+    const vendorTokenAccount = getAssociatedTokenAddressSync(
       nftMint.publicKey,
       asker.publicKey,
       false,
