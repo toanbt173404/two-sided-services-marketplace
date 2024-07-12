@@ -9,6 +9,10 @@ This repository contains a Solana program written using the Anchor framework. Th
   - [Prerequisites](#prerequisites)
   - [Getting Started](#getting-started)
     - [1. Clone the Repository](#1-clone-the-repository)
+    - [2. Install Dependencies](#2-install-dependencies)
+    - [3. Build the Program](#3-build-the-program)
+    - [4. Deploy the Program](#4-deploy-the-program)
+    - [5. Run the Tests](#5-run-the-tests)
 
 ## Prerequisites
 
@@ -23,3 +27,25 @@ This repository contains a Solana program written using the Anchor framework. Th
 ```sh
 git clone https://github.com/your-repo/solana-service-marketplace.git
 cd solana-service-marketplace
+```
+### 2. Install Dependencies
+
+```sh
+cargo install --locked --force solana-cli
+cargo install --locked --force anchor-cli
+```
+
+### 3. Build the Program
+```sh
+anchor build
+```
+
+### 4. Deploy the Program
+```
+anchor deploy
+```
+
+### 5. Run the Tests
+```
+anchor test
+```
